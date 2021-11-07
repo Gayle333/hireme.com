@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>hireme.com</title>
+</head>
+
+<body>
+    {{>navbar}}
+
+    <div class="btn-style">
+        <p id="btnpara">To Download My CV Click On The Download Button Below</p>
+        <button id="realBtn"><a class="btna" href="cv.pdf" download>
+                <p id="realBtnText">Download</p>
+                <div class="check-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                        <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                    </svg>
+                </div>
+            </a>
+        </button>
+    </div>
+
+    <div class="container mar">
+        <div class="row">
+            <div id="navbar" style="position:relative;">
+                <nav id="navbar-example2" class="navbar navbar-white bg-info px-3">
+                    <a class="navbar-brand" href="#">Know More About Me And This Website</a>
+                    <span id="scrollpain" onclick="scrolltoggle()">&#9776;</span>
+                    <ul id="scrollul" class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" style="color:white;" href="#scrollspyHeading1">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color:white;" href="#scrollspyHeading2">About This Website</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color:white;" href="#scrollspyHeading3">How To Contact Me</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example"
+                    tabindex="0" style="height:325px; overflow-y:scroll;">
+                    <h4 id="scrollspyHeading1" style="color: #5C33F6;">About Me</h4><br>
+                    <p>
+                    <p>My name is Sachin Tiwari. I am from Lucknow. I am an aspiring Full Stack Developer and a Level-2
+                        Certified Fitness Trainer from International Sports Sciences Association.I have learned :-</p>
+                    <br>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                    <li>MongoDB</li>
+                    <li>Python</li><br>
+                    For Python I did summer internship in my college years and I know basics of it I have not worked on
+                    it as far as making project is concerned but i know basics of it.
+                    </p><br>
+                    <h4 id="scrollspyHeading2" style="color: #5C33F6;">About This Website</h4><br>
+                    <p>
+                    <h6 style="color: #867AE9;">hireme</h6>
+                    <p>This website is a by product of what skills i have learnt.The Projects in navbar are arranged in
+                        such a way that the level of skills used and difficulties faced to create it increases
+                        gradually. It Uses HTML and CSS as front end languages and JavaScript as a backend language. It
+                        uses Node.js, Express.js and
+                        MongoDB for database Connectivity.</p><br>
+                    <h6 style="color: #867AE9;">LightBulb</h6>
+                    <p>LightBulb uses HTML and CSS as front end languages and JavaScript as a backend
+                        language.</p><br>
+                    <h6 style="color: #867AE9;">Windows 11</h6>
+                    <p>Windows 11 uses HTML and CSS as front end languages and JavaScript as a backend
+                        language.</p><br>
+                    <h6 style="color: #867AE9;">Weatherly</h6>
+                    <p>Weatherly uses HTML and CSS as front end languages and JavaScript as a backend
+                        language. This Project also uses <span>openweathermap API</span> and when you enter City Name in
+                        the
+                        search box It dynamically fetches real time weather data and shows it as a result.</p><br>
+                    <h6 style="color: #867AE9;">Contact</h6>
+                    <p>Contact Page uses HTML and CSS as front end languages and JavaScript as a backend
+                        language. For Contact Page I created <span>Schema</span> and <span>connected it to MongoDB
+                            database
+                            locally on my PC.</span>It has all validations in it.</p>
+                    </p><br>
+                    <h4 id="scrollspyHeading3" style="color: #5C33F6;">How To Contact Me</h4><br>
+                    <p>
+                    <h6 style="color: #867AE9;">My Email</h6>
+                    <p><span>sachin0999tiwari@gmail.com</span></p><br>
+                    <h6 style="color: #867AE9;">My Contact Number</h6>
+                    <p>8562931109</p><br>
+                    <h6 style="color: #867AE9;">My WhatsApp Number</h6>
+                    <p>7309852519</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{>footer}}
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
